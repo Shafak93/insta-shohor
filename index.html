@@ -77,8 +77,49 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+        <section class="container">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <h4>How does JavaScript work</h4>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        JavaScript is highlevel , interpreted and client-side -scripting language.When we run the JavaScript code inside a web browser,the browser  engine read the code and parse it . The google chrome browser use V8 engine to execute  the code quickly.Inside the V8 engine, it has JIT(Just In Time) compiler.JIT compiler is responsible for running code quickly. that's why it shows output quickly. In short every browser has it's own engine which is responsible for executing codeand show the ooutput.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <h4>Difference between Local Storage and Session Storage.</h4>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Local Storage and Session Storage both are used for storing data in the web browser with key-value pair.Though both are used for storing data, there has deffirence between themLocal Storage stores data across browser session. Session Storage stores data only persists the data as long as a browser tab is opened.That means if each time we opena new tab , a new session is created. When we close tha tab , the data we store will automatically remove.But tha data we store in local storage  has no expiry.These datadata isn't normally changed often.Local Storage provides access to the Document's Local Storage Object.On the other hand, Session Storage object can be accessed using the session Storage read-only-property.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h4>Event loop</h4>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        JavaScript executes all the operation on a single thread.It has types of things .First one is stack and second is queue. The call stack stores all the  function to keeptrack all the operations. When a function is finished,it removes the function from the stack.When stack is cleared than it goes to queue.The queue is where our asynchronous code gets pushed to, and waits for the execution.Then the Event Loop, which keeps working randomly and checks the stack, if the stack has any frames to execute, if not then it goes to queue,if queue has codes to execute then it remove the message from it to the Stack for the execution.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </section>
         <footer></footer>
-
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
     </body>
